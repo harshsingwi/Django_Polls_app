@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-polls"
+version = "0.1"
+dependencies = [
+    "django>=5.1.2",  
+]
+description = "A Django app to conduct web-based polls."
+readme = "README.md"
+requires-python = ">= 3.10"
+authors = [
+    {name = "Harsh Singwi", email = "harsh.singwi@somaiya.edu"},   
+]
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 5.1",  
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+
+[tool.setuptools.packages.find]
+include = ["django_polls"]
+
+[project.urls]
+Homepage = "http://127.0.0.1:8080/"
